@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "BlinkLed", "BlinkLed\BlinkLed.cppproj", "{B0D41E59-5FE6-4531-B7F6-E886C82C3DAC}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Bootloader", "Bootloader\Bootloader.cppproj", "{F7A42042-B54D-4165-8FF6-730D48B586F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D41E59-5FE6-4531-B7F6-E886C82C3DAC}.Debug|AVR.ActiveCfg = Debug|AVR
+		{B0D41E59-5FE6-4531-B7F6-E886C82C3DAC}.Debug|AVR.Build.0 = Debug|AVR
+		{B0D41E59-5FE6-4531-B7F6-E886C82C3DAC}.Release|AVR.ActiveCfg = Release|AVR
+		{B0D41E59-5FE6-4531-B7F6-E886C82C3DAC}.Release|AVR.Build.0 = Release|AVR
+		{F7A42042-B54D-4165-8FF6-730D48B586F1}.Debug|AVR.ActiveCfg = Debug|AVR
+		{F7A42042-B54D-4165-8FF6-730D48B586F1}.Debug|AVR.Build.0 = Debug|AVR
+		{F7A42042-B54D-4165-8FF6-730D48B586F1}.Release|AVR.ActiveCfg = Release|AVR
+		{F7A42042-B54D-4165-8FF6-730D48B586F1}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
