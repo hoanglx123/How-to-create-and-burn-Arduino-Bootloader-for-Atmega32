@@ -1,0 +1,20 @@
+##############################################################
+
+atmega32-16.name=ATMega32 @ 16 MHz  (external oscillator)
+
+atmega32-16.upload.tool=avrdude
+atmega32-16.upload.protocol=arduino
+atmega32-16.upload.speed=19200
+
+atmega32-16.bootloader.tool=avrdude
+atmega32-16.bootloader.low_fuses=0xFF
+atmega32-16.bootloader.high_fuses=0xDA
+atmega32-16.bootloader.file=atmega32\Bootloader.hex
+atmega32-16.bootloader.unlock_bits=0x3F
+atmega32-16.bootloader.lock_bits=0x0F
+
+atmega32-16.build.mcu=atmega32
+atmega32-16.build.f_cpu=16000000L
+atmega32-16.build.core=arduino
+
+##############################################################
