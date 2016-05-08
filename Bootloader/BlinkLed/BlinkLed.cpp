@@ -7,14 +7,25 @@
 
 
 #include <avr/io.h>
+#include <util/delay.h>
+
+/* Configure port to control LED */
+#define LED_DDR  DDRA
+#define LED_PORT PORTA
+#define LED_CTRL PINA4
+
+/* Set and clear each bit */
+#define sbi(port, bit) port | (1 << bit)	/* Set bit */
+#define cbi(port, bit) port & (~(1 << bit))	/* Clear bit */
 
 int main(void)
 {
-	DDRA  = 0xFF; 
-	PORTA = 0xFF; 
+	LED_DDR  = 0xFF; 
+	LED_PORT = 0xFF; 
 	
     while(1)
     {
-        //TODO:: Please write your application code 
+        LED_PORT ^= sbi(LED_PORT, LED_CTRL);
+		_delay_ms(100); 
     }
 }
