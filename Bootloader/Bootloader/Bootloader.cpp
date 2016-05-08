@@ -78,7 +78,7 @@
 /* Adjust to suit whatever pin your hardware uses to enter the bootloader */
 #define eeprom_rb(addr)			eeprom_read_byte ((uint8_t *)(addr))
 #define eeprom_rw(addr)			eeprom_read_word ((uint16_t *)(addr))
-#define eeprom_wb(addr, val)   eeprom_write_byte ((uint8_t *)(addr), (uint8_t)(val))
+#define eeprom_wb(addr, val)	eeprom_write_byte ((uint8_t *)(addr), (uint8_t)(val))
 
 //Start Add hoanglx123 (2016/05/07) Custom code corresponding to my board 
  #ifdef __AVR_ATmega8__
@@ -190,7 +190,10 @@ int main(void)
   sbi(LED_DDR,LED);
 	for (i = 0; i < 16; i++) {
 		outb(LED_PORT, inb(LED_PORT) ^ _BV(LED));
-		_delay_loop_2(0);
+		//Start mod hoanglx123 (2016/05/07)
+		//_delay_loop_2(0);
+		_delay_ms(100); 
+		//End mod hoanglx123 (2016/05/07)
 	}
 	
 	//for (l=0; l<40000000; l++)
